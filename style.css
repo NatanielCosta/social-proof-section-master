@@ -1,0 +1,234 @@
+
+
+:root {
+  --one: 1;
+  --two: 2;
+  --three: 3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: url('./images/bg-pattern-top-mobile.svg') top left no-repeat, url('./images/bg-pattern-bottom-mobile.svg') bottom right no-repeat, hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main {
+  width: 34rem;
+  margin: 8rem auto;
+}
+
+.main__info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main__info__heading {
+  margin-bottom: 3rem;
+}
+
+.main__info__heading h1 {
+  font-size: 4rem;
+  color: hsl(300, 43%, 22%);
+  margin-bottom: 2rem;
+}
+
+.main__info__heading p {
+  font-size: 1.8rem;
+  color: hsl(303, 10%, 53%);
+  line-height: 2.6rem;
+}
+
+.main__info__avaibles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.avaibles--item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: .5rem;
+  background-color: hsla(303, 10%, 53%, .08);
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.avaibles--item p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+}
+
+.main__reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main__reviews__box {
+  background-color: hsl(300, 43%, 22%);
+  padding: 3.2rem;
+  border-radius: .5rem;  
+}
+
+.main__reviews__box__person {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.person--avatar {
+  width: 4rem;
+  border-radius: 50%;
+}
+
+.person__info {
+  margin-left: 2.5rem;
+}
+
+.person__info--name {
+  color: hsl(300, 24%, 96%);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.person__info--ocupation {
+  color: hsl(333, 80%, 67%);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.main__reviews__box--review p {
+  color: hsl(300, 24%, 96%);
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  text-align: left;
+}
+
+.attribution {
+  font-size: 1.1rem;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.attribution a {
+  font-size: 1.1rem;
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 800px) {
+  body {
+    background: url('./images/bg-pattern-top-desktop.svg') top left no-repeat 40rem, url('./images/bg-pattern-bottom-desktop.svg') bottom right no-repeat, hsl(0, 0%, 100%);
+  }
+
+  .main {
+    width: 85rem;
+  }
+
+  .main__info {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 7rem;
+  }
+
+  .main__info__heading {
+    margin-bottom: auto;
+  }
+
+  .main__info__heading h1 {
+    text-align: left;
+    width: 30rem;
+    margin-bottom: .5rem;
+  }
+
+  .main__info__heading p {
+    text-align: left;
+    width: 38rem;
+    font-size: 1.4rem;
+  }
+
+  .main__info__avaibles {
+    margin-bottom: 0;
+    gap: 1.5rem;
+    width: 60%;
+    align-items: flex-end;
+  }
+
+  .avaibles--item {
+    width: 40rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.55rem 2.6rem;
+  }
+
+  .stars-box img {
+    width: 1.5rem;
+    margin-right: .4rem;
+  }
+
+  .avaibles--item p {
+    font-size: 1.4rem;
+    margin-left: 2rem;
+  }
+
+  .avaibles--item1 {
+    margin-right: 6rem;
+  }
+
+  .avaibles--item2 {
+    margin-right: 3rem;
+  }
+
+  .avaibles--item3 {
+    margin-right: 0;
+  }
+
+  .main__reviews {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .person--avatar {
+    width: 3.5rem;
+  }
+
+  .person__info--name {
+    font-size: 1.2rem;
+  }
+
+  .person__info--ocupation {
+    font-size: 1.2rem;
+  }
+
+  .main__reviews__box1 {
+    margin-top: 0rem;
+  }
+
+  .main__reviews__box2 {
+    margin-top: 1.5rem;
+  }
+
+  .main__reviews__box3 {
+    margin-top: 3rem;
+  }
+
+  .main__reviews__box--review p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+}
